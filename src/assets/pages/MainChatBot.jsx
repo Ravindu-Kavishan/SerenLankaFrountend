@@ -86,7 +86,7 @@ export default function MainChatBot() {
         });
 
         if (!response.ok) {
-          const errorResponse = await response.json(); // Parse the error response body
+          const errorResponse = await response.json(); 
           alert(`Error: - ${errorResponse.detail || "An error occurred."}`);
           return;
         }
